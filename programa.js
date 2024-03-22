@@ -20,6 +20,33 @@ let numero=1, numero2=2 ,numero3=3;
 
 let nulo = null; //valores especiales, Nan significa Not a Number
 
-let nombre = prompt("dame un nombre") //prompt es in input que se puede almacenar en variables
+let nombre = prompt("dame un nombre"); //prompt es in input que se puede almacenar en variables
 
-alert(nombre)
+alert(nombre);
+
+//concatenamiento
+ var saludo = "Hola Eudosio";
+ var pregunta = "Como Nadas";
+ frase = saludo + pregunta;
+ document.write(frase);
+
+//para concatenar numeros es necesario forzar texto
+result= "" + numero + numero2;
+document.write(result);
+//tambien se puede concatenar con la funcion concat
+//result= numero.concat(numero2);
+//document.write(result);
+
+//backtics
+nombre = "Eudosio";
+frase = `el dia hoy ${nombre} aprendio algo nuevo`;// es recomendable para escribir codigo html dentro de una variable
+document.write(frase);
+
+//operadores logicos
+let texto ="1";
+let texto2 = "texto 2"
+document.write(numero===texto)
+document.write(numero!==texto)
+
+//camel hace referencia a que la primera palabra inicia con miniscula y luego todas las empiezan con mayusculas
+declararVariable;
