@@ -68,3 +68,55 @@ document.write("<br>")
         
     }
  }
+
+document.write("<br>")
+
+//funciones
+
+function saludar() {
+    respuesta = prompt("Cuando es el pal norte?");
+    if (respuesta == "Viernes"){
+        alert("que chido")
+        return "que saquen las heladas"
+    }else{
+        alert("Ya mero")
+        return "a descansar" // return expondra el valor que queramos de la funcion
+    }
+}
+
+//otra forma de declarar funcion
+const saludar2 = function() {
+    respuesta = prompt("Cuando es el pal norte?");
+    if (respuesta == "Viernes"){
+        alert("que chido")
+    }else{
+        alert("Ya mero")
+
+    }
+}
+
+let saludo = saludar();
+document.write(saludo)
+
+document.write("<br>")
+
+
+function suma(num1, num2){
+    let res= num1 + num2; // es importante declarar let debido a que si no se combierte en var la variable y trae problemas
+    return res;
+}
+let sumas = suma(10,50);
+document.write(sumas)
+
+//funciones flecha
+
+const saludar3 = (nombre)=> {
+    respuesta = prompt("Cuando es el pal norte?");
+    if (respuesta == "Viernes"){
+        alert("que chido")
+    }else{
+        alert("Ya mero")
+
+    }
+}
+
