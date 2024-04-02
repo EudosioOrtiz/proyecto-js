@@ -47,7 +47,7 @@ for(alumno in alumnosTotales){
     ________Ausencias: ${30 - parseInt(alumnosTotales[alumno][1])}`;
 
     if (30 - alumnosTotales[alumno][1] > 18){
-        resultado+= "<b style =>'color:red'>  Reprobado por Inascistencias  </b><br><br>"
+        resultado+= "<b style ='color:red'>  Reprobado por Inascistencias  </b><br><br>"
     }else{
         resultado+= "<br><br>"
     }
