@@ -16,7 +16,7 @@ function crearLlave(nombre, modelo, precio){
 
 let documentFragment = document.createDocumentFragment();
 
-for (var i=1; i<=20; i++){
+for (var i=1; i<=40; i++){
     let modelorandom = Math.round(Math.random()*10000);
     let preciorandom = Math.round(Math.random()*10+30);
     let llave = crearLlave(`llave ${i}`,`modelo ${modelorandom}`,`${preciorandom}`);
