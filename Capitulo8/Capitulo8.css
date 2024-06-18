@@ -16,9 +16,42 @@ h2{
 p{
 color: #ccc;
 }
+/*FUNCIONES INSPECCIONAR*/
 
 body > div > p{
     background-color: aquamarine;
 } /*copiado desde el inspector de paginas*/
 
+/*ELEMENTS*/
+
 /*se pueden cambiar a acceder a atributos de los elementos en opciones*/
+
+/* el force state nos ayuda a forzar estados para probar funciones declaradas*/
+
+/*en styles y computed puedes ver estilos del elemento para modificarlo*/
+
+/*en la pestana console al llamar al elemento te ensena todas sus propiedades*/
+
+/*se puede buscar elementos con ctrl f*/
+
+/*en la flecha actividad se puede seleccionar elemento desde la pagina*/
+
+/*SOURCES*/
+
+/*accediendo a sources puedes modificar los archivos y guardarlos desde esa 
+pestana y se modificaran, y se guardaran en los documentos*/
+
+/*en workspace puedes importar archivos para codificar como editor de codigo*/
+
+/*los snippets permiten generar un fragmento de codigo para implementarlo 
+despues puede usarse para probar cosas*/
+
+/*NETWORK*/
+
+/*cuando cargas y actualizas la pagina en la pestana network se carga la 
+tabla de propiedades de cada archivo, dando indicadores para optimizar codigo
+ tiempos de carga, etc.
+ tambien se puede agregar mas columnas en opciones, se puede filtrar por tipo 
+ de archivo o columnas, tambien se tienen diversas funciones*/
+
+/*prueba*/
