@@ -179,3 +179,36 @@ obtenerPersona(id).then((persona)=>{
 }).catch((e)=>{
     console.log(e)
 });
+
+
+
+//await and async
+
+const objeto = {
+    propiedad1 : "valor1",
+    propiedad2 : "valor2",
+    propiedad3 : "valor3",
+};
+
+const obtenerInformacion = (text)=>{
+    return new Promise((resolve, reject) => {
+        setTimeout(()=> {resolve(text)},Math.random()*200)
+    })
+}
+
+//obtenerInformacion().then(resultado => console.log(resultado));
+
+/*async function mostrasResultado(){
+
+}*/
+
+const mostrasResultado = async ()=>{
+    data1 = await obtenerInformacion("1:Eudosio");
+    data2 = await obtenerInformacion("2:Mario");
+    data3 = await obtenerInformacion("3:Hugo");
+    console.log(data1);
+    console.log(data2);
+    console.log(data3);
+}
+
+mostrasResultado();
