@@ -1,6 +1,6 @@
 /* MODO ESTRICTO (use strict)*/
 
-"use strict";
+//"use strict";
 
 let variable = "valor";
 
@@ -31,7 +31,7 @@ console.log(obj.nombre);
 
 
 const str = "String";
-str.canal = "newstring";
+//str.canal = "newstring";
 
 //en javascript normal no arroja el error de intentar agregar propiedades a un string
 //en use strict si lo muestra
@@ -41,3 +41,36 @@ console.log(str);
 function hablar (){
     
 }
+
+
+/*function saludar(nombre){
+    this.nombre = "Eudosio";
+    this.saludar = function(){
+        console.log(`Hola ${this.nombre}`)
+    }
+}
+
+salu = saludar();
+salu.saludar();
+
+This solo funciona para classes y objetos*/
+
+console.log(0o34)
+//asi se escribe el numero octal con O MAYUSCULA O MINUSCULA
+
+//eval = "hola";
+
+//console.log(eval)
+// eval no se puede usar como variable
+
+nombre2 = "Eudosio"
+
+function say(){
+    "use strict";
+    console.log(nombre2)
+}
+
+say()
+// para usar variables dentro de una funcion usando use strict se tiene que declarar adentro 
+// de la funcion
+
