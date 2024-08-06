@@ -31,13 +31,27 @@ console.log(obj.nombre);
 
 
 const str = "String";
-str.canal = "newstring";
+//str.canal = "newstring";
 
 //en javascript normal no arroja el error de intentar agregar propiedades a un string
 //en use strict si lo muestra
 
 console.log(str);
 
-function hablar (){
-    
+function hablar (texto){
+    console.log(texto)
 }
+
+hablar("Eudosio")
+// no se puede ocupar un parametro duplicado en use strict
+
+const obj3 = {
+    nombre : "lucas"
+}
+
+delete obj3.nombre
+// delete se ocupa para eliminar propiedades de objetos
+console.log(obj3)
+
+// palabras reservadas no se pueden declarar
+
