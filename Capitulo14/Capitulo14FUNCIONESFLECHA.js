@@ -119,6 +119,74 @@ px12= cambiarTamano(12);
 px14= cambiarTamano(14);
 px16= cambiarTamano(16);
 
-document.querySelector("t12").addEventListener("click",px12);
-document.querySelector("t14").addEventListener("click",px14);
-document.querySelector("t16").addEventListener("click",px16);
+document.querySelector(".t12").addEventListener("click",px12);
+document.querySelector(".t14").addEventListener("click",px14);
+document.querySelector(".t16").addEventListener("click",px16);
+
+//parametros por defecto
+
+const suma = (a=0,b=0)=>{
+    console.log(a+b)
+}
+suma(12,23)
+
+
+//PARAMETRO REST
+// el parametro rest tiene que ser el ultimo parametro dado para que funcione
+const suma2 = (frase,...num)=>{
+    let resultado = 0 ;
+    for (let i = 0; i < num.length; i++){
+        resultado += num[i];
+    }          
+    console.log(`${frase} ${resultado}`)
+}
+suma2("Eudosio",12,23,50,100)
+
+//OPERADOR TERNARIO
+
+let age = 23;
+
+(age > 18) 
+    ? //true value
+    (
+        console.log("es mayor de edad"),
+        console.log("Puedes pasar")
+    )
+    : //false Value
+    (
+        console.log("es menor de edad"),
+        console.log("No puedes pasar")
+    )
+//el operador ternario consume menos recursos que el IF
+
+//OPERADOR SPREAD
+
+let valor1 = "valor 1";
+let valor2 = "valor 2";
+let valor3 = "valor 3";
+
+let arr = ["valor 1", "valor 2", "valor 3"];
+
+console.log(valor1,valor2,valor3);
+console.log(...arr); //parametro rest se usa para destructurar un array o mostrarlo normal
+
+//usos
+
+let arry = ["fresa","kiwi","nango"];
+let arry2 = ["miwi","paparanja","manzana"];
+
+//arry.push(...arry2);
+//o
+let arry3 = [...arry,...arry2]
+
+console.log(arry3)
+
+//argumentos rest
+
+const sum = (num1, num2, num3)=>{
+    console.log(num1 + num2 +num3);
+}
+
+let arrry = [3,6,10];
+
+sum(...arrry)
