@@ -1,3 +1,4 @@
+"use strict";
 //Objeto DATE
 
 const fecha = new Date(); //date es un constructor por lo tanto es un objeto con funciones y propiedades
@@ -32,6 +33,48 @@ const actualizarHora = ()=>{
 actualizarHora();
 setInterval(actualizarHora,1000);
 
-//LOCALSTORAGE Y SESSIONSTORAGE
+/*LOCALSTORAGE x
+localStorage.setItem("nombre","Eudosio");
+console.log(localStorage);
+let nombre = localStorage.getItem("nombre");
+console.log(nombre)
+//SESSIONSTORAGE
+sessionStorage.setItem("nombre","Eudosiox");
+console.log(sessionStorage);
+let nombre2 = sessionStorage.getItem("nombre");
+console.log(nombre2)
 
-localStorage.setItem
+setTimeout(()=>{
+    sessionStorage.removeItem("nombre")
+},3000);
+
+//tambien se puede opcupar clear() para los dos sessions*/
+
+//ejemplo
+const modal = document.querySelector(".modal-overlay");
+
+const definirIdioma = ()=>{
+    document.querySelector(".en").addEventListener("click",()=>{
+        localStorage.setItem("idioma","en");
+        cerrarModal();
+    })
+
+    document.querySelector(".es").addEventListener("click",()=>{
+        localStorage.setItem("idioma","es");
+        cerrarModal();
+    })
+}
+
+const cerrarModal = ()=>{
+    
+    modal.style.animation = "desaparecer 1s forwrds";
+    setTimeout(()=>modal.style.display = "none",1000)
+}
+
+const idioma = localStorage.getItem("idioma");
+
+if(idioma === null) definirIdioma();
+else {
+    console.log(`Idioma: ${idioma}`)
+    modal.style.display= "none";
+}
