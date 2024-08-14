@@ -1,6 +1,6 @@
 /* MODO ESTRICTO (use strict)*/
 
-"use strict";
+//"use strict";
 
 let variable = "valor";
 
@@ -38,20 +38,39 @@ const str = "String";
 
 console.log(str);
 
-function hablar (texto){
-    console.log(texto)
+function hablar (){
+    
 }
 
-hablar("Eudosio")
-// no se puede ocupar un parametro duplicado en use strict
 
-const obj3 = {
-    nombre : "lucas"
+/*function saludar(nombre){
+    this.nombre = "Eudosio";
+    this.saludar = function(){
+        console.log(`Hola ${this.nombre}`)
+    }
 }
 
-delete obj3.nombre
-// delete se ocupa para eliminar propiedades de objetos
-console.log(obj3)
+salu = saludar();
+salu.saludar();
 
-// palabras reservadas no se pueden declarar
+This solo funciona para classes y objetos*/
+
+console.log(0o34)
+//asi se escribe el numero octal con O MAYUSCULA O MINUSCULA
+
+//eval = "hola";
+
+//console.log(eval)
+// eval no se puede usar como variable
+
+nombre2 = "Eudosio"
+
+function say(){
+    "use strict";
+    console.log(nombre2)
+}
+
+say()
+// para usar variables dentro de una funcion usando use strict se tiene que declarar adentro 
+// de la funcion
 
