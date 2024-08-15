@@ -3,9 +3,7 @@
     font-family: sans-serif;
     padding: 0;
     margin: 0;
-}
-    
-
+}    
 
 .rectangulo {
     padding: 100px 200px;
@@ -20,4 +18,39 @@
     margin: 10px;
     background: #f00;
     display: inline-block;
+}
+
+.texturas {
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.texturas div {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 6px;
+    user-select: all;
+}
+
+.texturas div:active {
+    opacity: 0.55;
+}
+
+.textura1 {
+    background: url("textu1.jpg");
+}
+.textura2 {
+    background: url("textu2.jpg");
+}
+.textura3 {
+    background: url("textu3.jpg");
+}
+
+.zona{
+    margin: 10px;
+    background: #ddd;
+    height: 500px;
 }
